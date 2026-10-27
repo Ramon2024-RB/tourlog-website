@@ -3,50 +3,184 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#101217">
-  <title>Datenschutz – TourLog | LogWorks</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="theme-color" content="#10110f">
+  <meta name="description" content="Datenschutzhinweise zur TourLog-App und der TourLog-Website.">
+  <title>Datenschutz | TourLog</title>
+  <style>
+
+:root {
+  color-scheme: dark;
+  --bg:#10110f; --surface:#1a1c18; --surface2:#22251e; --line:#373a30;
+  --gold:#e0bd78; --gold-light:#f5dfae; --text:#f3f1e9; --muted:#bbbcb3;
+  --green:#a5cf9a; --max:1080px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;
+background:radial-gradient(circle at 82% -7%,#3b3320 0,transparent 35%),var(--bg);
+color:var(--text);line-height:1.65}
+a{color:var(--gold-light);text-decoration-thickness:1px;text-underline-offset:3px}
+a:hover{color:#fff0ca}
+.wrap{width:min(calc(100% - 44px),var(--max));margin:auto}
+.site-header{border-bottom:1px solid var(--line);background:rgba(16,17,15,.92)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:82px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:12px;color:var(--text);text-decoration:none;font-size:1.18rem;font-weight:800;letter-spacing:-.03em}
+.brand-mark{display:grid;place-items:center;width:38px;height:38px;border-radius:12px;
+background:linear-gradient(135deg,#e9cc8c,#98713b);color:#171812;font-size:.83rem;
+font-weight:900;letter-spacing:-.08em;box-shadow:0 4px 18px #0005}
+nav{display:flex;flex-wrap:wrap;gap:18px;align-items:center}
+nav a{color:var(--muted);font-size:.92rem;text-decoration:none}
+nav a[aria-current="page"],nav a:hover{color:var(--gold-light)}
+.hero{padding:91px 0 68px;position:relative}
+.eyebrow{display:inline-flex;align-items:center;gap:9px;color:var(--gold);font-weight:700;
+font-size:.78rem;letter-spacing:.12em;text-transform:uppercase}
+.eyebrow::before{content:"";width:18px;height:2px;background:var(--gold)}
+h1{font-size:clamp(2.5rem,5.1vw,4.7rem);line-height:1.1;letter-spacing:-.055em;margin:20px 0 22px}
+h1 .gold{color:var(--gold-light)}
+h2{font-size:clamp(1.45rem,3vw,2.05rem);letter-spacing:-.035em;line-height:1.25;margin:0 0 14px}
+h3{font-size:1.09rem;margin:0 0 10px;letter-spacing:-.015em}
+p{margin:0 0 17px}
+.lead{font-size:1.12rem;color:#d2d1c8;max-width:680px}
+.btn-row{display:flex;flex-wrap:wrap;gap:13px;margin-top:30px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;
+padding:12px 18px;border-radius:12px;border:1px solid var(--line);text-decoration:none;
+font-weight:700;font-size:.93rem;color:var(--text)}
+.btn-primary{background:var(--gold);color:#1b1b14;border-color:var(--gold)}
+.btn-primary:hover{background:var(--gold-light);color:#171710}
+.btn-secondary:hover{background:#2a2a23;color:var(--text)}
+.section{padding:44px 0 72px}
+.section-intro{color:var(--muted);max-width:760px;margin-bottom:25px}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.card{background:linear-gradient(140deg,var(--surface2),var(--surface));
+border:1px solid var(--line);border-radius:20px;padding:25px}
+.card p{color:var(--muted);margin-bottom:0}
+.card .symbol{font-size:1.42rem;color:var(--gold);display:inline-block;margin-bottom:15px}
+.panel{padding:29px;border:1px solid #5a5139;border-radius:22px;background:linear-gradient(130deg,#2d2a1f,#1c1e19)}
+.panel p:last-child{margin-bottom:0}
+.kicker{color:var(--gold);font-size:.82rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase}
+.narrow{max-width:840px}
+.prose h2{margin-top:37px;font-size:1.45rem}
+.prose h3{margin-top:24px}
+.prose p,.prose li{color:#d1d1c7}
+.prose ul{padding-left:24px}
+.prose li{margin-bottom:8px}
+.faq{display:grid;gap:12px;margin-top:20px}
+.faq article{padding:23px;border:1px solid var(--line);border-radius:17px;background:var(--surface)}
+.faq p{color:var(--muted);margin:0}
+.note{padding:16px 19px;border-left:3px solid var(--gold);background:#252419;border-radius:0 12px 12px 0;color:#dfddcf}
+.warning{padding:18px 22px;border:1px solid #d6ac63;background:#322819;border-radius:12px;color:#fff5de}
+.warning strong{color:#ffe4aa}
+.site-footer{border-top:1px solid var(--line);margin-top:35px;padding:28px 0 42px}
+.footer-inner{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;
+font-size:.88rem;color:var(--muted)}
+.footer-links{display:flex;flex-wrap:wrap;gap:17px}
+.footer-links a{color:var(--muted)}
+.email{overflow-wrap:anywhere}
+@media(max-width:760px){.bar{padding:15px 0}nav{gap:12px}
+.hero{padding:63px 0 45px}.grid{grid-template-columns:1fr}
+.section{padding:32px 0 50px}.card{padding:20px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+  </style>
 </head>
 <body>
-<header class="nav wrap">
-  <a class="brand" href="index.html"><span class="logo">◈</span> LogWorks</a>
-  <nav><a href="index.html">Startseite</a><a href="support.html">Support</a><a href="impressum.html">Impressum</a></nav>
-</header>
-<main>
-  <section class="wrap pagehead">
-    <p class="eyebrow">LOGWORKS · DATENSCHUTZ</p>
-    <h1>Datenschutzerklärung.</h1>
-    <p class="lead">Datenschutzinformationen zur LogWorks-Webseite und zur TourLog-App.</p>
-  </section>
-  <section class="wrap">
-    <div class="content-card">
-      <p class="notice">Der Schutz personenbezogener Daten ist uns wichtig. Nachfolgend informieren wir über die Datenverarbeitung bei der Nutzung der LogWorks-Webseite und der TourLog-App.</p>      
-      <h2>1. Verantwortliche Person</h2>
-      <p>Nico Albert, handelnd unter der Bezeichnung LogWorks. Die postalische Anschrift steht im <a href="impressum.html">Impressum</a>.</p>
-      <p>E-Mail: <a href="mailto:logworks.support@gmail.com">logworks.support@gmail.com</a></p>
-      <h2>2. Hosting der LogWorks-Webseite</h2>
-      <p>Diese Webseite wird über GitHub Pages bereitgestellt, einen Dienst von GitHub, Inc. Beim Aufruf der Webseite werden technisch erforderliche Verbindungsdaten, insbesondere die IP-Adresse und Informationen zur Anfrage, an die Server des Hosting-Anbieters übertragen. GitHub kann im Rahmen des Betriebs technische Protokolldaten verarbeiten. Auf die konkrete Speicherung und Aufbewahrungsdauer bei GitHub haben wir keinen unmittelbaren Einfluss.</p>
-      <p>Die Bereitstellung der Webseite und deren Sicherheit erfolgen auf Grundlage unseres berechtigten Interesses an einem funktionsfähigen Onlineangebot (Art. 6 Abs. 1 lit. f DSGVO), soweit wir hierfür verantwortlich sind. Angaben zur Verarbeitung durch GitHub finden sich in der <a href="https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener noreferrer">Datenschutzerklärung von GitHub</a>. Eine mögliche Übermittlung in Drittländer ist bei der abschließenden Prüfung der Hosting-Konfiguration zu berücksichtigen.</p>
-      <h2>3. Datenverarbeitung in TourLog</h2>
-      <p>TourLog dient der persönlichen Erfassung und Auswertung von Arbeitszeiten, Pausen, Zustelltätigkeiten, Zustellstützpunkten, Bezirken und Paketmengen. Nach dem derzeitigen Entwicklungsstand werden diese Angaben lokal auf dem Gerät gespeichert. Für die Nutzung ist kein Benutzerkonto erforderlich.</p>
-      <h2>4. Werbung, Tracking und Statistiken</h2>
-      <p>TourLog ist für die erste Veröffentlichung kostenlos und ohne Werbung oder eigene Cloud-Synchronisierung vorgesehen. Nach derzeitigem Entwicklungsstand sind keine eigenen Tracking- oder Werbedienste integriert. Statistiken werden anhand der lokal gespeicherten Angaben innerhalb der App erstellt. Diese Aussagen müssen vor der Veröffentlichung anhand der finalen App-Version und ihrer Bibliotheken überprüft werden.</p>
-      <h2>5. Backups und Teilen</h2>
-      <p>Auf Wunsch können Daten exportiert, geteilt oder importiert werden. Wenn dabei andere Apps oder Speicherdienste verwendet werden, können deren eigene Datenschutzbestimmungen gelten. Die Auswahl des Speicherorts erfolgt durch die nutzende Person.</p>
-      <h2>6. Löschen von Daten</h2>
-      <p>Einträge können im Rahmen der vorhandenen App-Funktionen bearbeitet oder gelöscht werden. Beim Entfernen der App können lokal gespeicherte Daten verloren gehen. Bereits exportierte Backups verbleiben gegebenenfalls an ihrem jeweiligen Speicherort.</p>
-      <h2>7. Kontakt per E-Mail</h2>
-      <p>Bei einer freiwilligen Kontaktaufnahme per E-Mail an logworks.support@gmail.com verarbeiten wir die übermittelten personenbezogenen Daten, insbesondere die E-Mail-Adresse, den Nachrichteninhalt und gegebenenfalls mitgesendete Anhänge, ausschließlich zur Bearbeitung und Beantwortung der Anfrage.</p>
-      <p>Für die E-Mail-Kommunikation nutzen wir Gmail, einen Dienst von Google. Dabei werden die E-Mails und die darin enthaltenen personenbezogenen Daten durch Google verarbeitet. Eine Verarbeitung beziehungsweise Übermittlung von Daten außerhalb des Europäischen Wirtschaftsraums kann stattfinden. Weitere Informationen enthält die <a href="https://policies.google.com/privacy?hl=de" target="_blank" rel="noopener noreferrer">Datenschutzerklärung von Google</a>.</p>
-      <p>Die Verarbeitung erfolgt je nach Anliegen auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO (vorvertragliche oder vertragliche Kommunikation) oder Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an der Bearbeitung von Anfragen). Nachrichten werden gelöscht, sobald sie für die Bearbeitung nicht mehr erforderlich sind, sofern keine gesetzlichen Aufbewahrungspflichten entgegenstehen.</p>
-      <h2>8. Betroffenenrechte</h2>
-      <p>Soweit wir personenbezogene Daten verarbeiten, bestehen nach Maßgabe der DSGVO insbesondere Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung und Widerspruch. Außerdem besteht das Recht, sich bei einer zuständigen Datenschutzaufsichtsbehörde zu beschweren. Für entsprechende Anfragen kann die oben genannte E-Mail-Adresse genutzt werden.</p>
-      <h2>9. Änderungen</h2>
-      <p>Diese Datenschutzerklärung wird aktualisiert, wenn sich Funktionen, eingesetzte Dienste oder die Datenverarbeitung ändern.</p>
+  <header class="site-header">
+    <div class="wrap bar">
+      <a class="brand" href="index.html" aria-label="TourLog – Startseite">
+        <span class="brand-mark" aria-hidden="true">TL</span><span>TourLog</span>
+      </a>
+      <nav aria-label="Hauptnavigation">
+        <a href="index.html">Startseite</a>
+<a href="support.html">Support</a>
+<a href="datenschutz.html" aria-current="page">Datenschutz</a>
+<a href="impressum.html">Impressum</a>
+      </nav>
     </div>
-  </section>
-</main>
-<footer class="wrap footer"><span>© 2026 LogWorks</span><div><a href="index.html">Startseite</a><a href="support.html">Support</a><a href="impressum.html">Impressum</a></div></footer>
+  </header>
+  <main id="inhalt">
+
+    <section class="hero">
+      <div class="wrap narrow">
+        <span class="eyebrow">Rechtliche Informationen</span>
+        <h1>Datenschutz<span class="gold">.</span></h1>
+        <p class="lead">Informationen zur Verarbeitung personenbezogener Daten
+          auf dieser Website und bei der Nutzung der App TourLog.</p>
+        <p style="color:var(--muted);font-size:.87rem">Stand: 27. Oktober 2026</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="wrap narrow prose">
+        <h2>1. Verantwortlicher</h2>
+        <p>Nico Albert<br>
+          Vollständige Anschrift: siehe <a href="impressum.html">Impressum</a><br>
+          E-Mail: <a class="email" href="mailto:logworks.support@gmail.com">logworks.support@gmail.com</a></p>
+
+        <h2>2. Datenschutz in der App TourLog</h2>
+        <p>Nach dem derzeit beschriebenen Funktionsumfang werden Arbeitszeitaufzeichnungen,
+          Kalenderangaben, Toureninformationen und persönliche Auswertungen lokal auf dem Gerät
+          verwaltet. Für diese Funktionen ist kein Benutzerkonto erforderlich.</p>
+        <p>TourLog betreibt nach dem derzeit beschriebenen Funktionsumfang keine eigene
+          Cloud-Synchronisierung und setzt keine eigenen Werbe- oder Tracking-SDKs ein.
+          Die App übermittelt diese Aufzeichnungen nicht an einen vom Anbieter betriebenen Server.
+          Bei der bewussten Nutzung einer Export- oder Teilen-Funktion bestimmst du, an welchen
+          Speicherort beziehungsweise welchen Empfänger die Daten gehen.</p>
+        <p class="note">Diese Beschreibung muss mit der tatsächlich veröffentlichten
+          App-Version übereinstimmen. Sollten später etwa Cloud-Funktionen,
+          Analysedienste, Werbung oder Abonnements integriert werden, wird
+          diese Datenschutzerklärung entsprechend angepasst.</p>
+
+        <h2>3. Besuch dieser Website / Hosting</h2>
+        <p>Diese Website wird über GitHub Pages bereitgestellt, einen Dienst von GitHub, Inc.
+          Beim Aufruf der Website werden technisch erforderliche Verbindungsdaten verarbeitet.
+          GitHub dokumentiert insbesondere die Protokollierung von IP-Adressen der Besucher
+          zu Sicherheitszwecken.</p>
+        <p>Informationen zur Verarbeitung durch GitHub findest du in der
+          <a href="https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement"
+          target="_blank" rel="noopener noreferrer">Datenschutzerklärung von GitHub</a>.
+          Eine Verarbeitung außerhalb der Europäischen Union kann dabei nicht ausgeschlossen werden.</p>
+        <p>Diese Website setzt im vorliegenden HTML-Code selbst keine Analysewerkzeuge,
+          externen Schriftbibliotheken oder Marketing-Cookies ein.
+          Die technische Datenverarbeitung durch den Hostinganbieter bleibt davon unberührt.</p>
+
+        <h2>4. Kontakt per E-Mail</h2>
+        <p>Wenn du eine Supportanfrage per E-Mail sendest, verarbeiten wir die von dir mitgeteilten
+          Angaben (insbesondere E-Mail-Adresse und Nachrichteninhalt), um dein Anliegen zu bearbeiten.
+          Rechtsgrundlage ist je nach Anliegen Art. 6 Abs. 1 lit. b DSGVO
+          (vertragliche oder vorvertragliche Kommunikation) oder Art. 6 Abs. 1 lit. f DSGVO
+          (berechtigtes Interesse an der Bearbeitung von Anfragen).</p>
+        <p>Die Nachrichten werden gelöscht, sobald sie zur Bearbeitung nicht mehr erforderlich sind,
+          soweit keine gesetzlichen Aufbewahrungspflichten oder berechtigten Gründe
+          für eine weitere Speicherung bestehen. Bitte übermittle keine unnötigen
+          personenbezogenen Daten von Dritten.</p>
+
+        <h2>5. App Store und Apple</h2>
+        <p>Beim Download und bei der Nutzung von Funktionen des Apple App Stores kann Apple
+          eigene personenbezogene Daten nach seinen Bestimmungen verarbeiten.
+          Einzelheiten findest du unter
+          <a href="https://www.apple.com/de/legal/privacy/" target="_blank" rel="noopener noreferrer">Apple Datenschutz</a>.
+          Diese Verarbeitung ist von den oben beschriebenen lokalen TourLog-Funktionen zu unterscheiden.</p>
+
+        <h2>6. Deine Rechte</h2>
+        <p>Soweit wir personenbezogene Daten von dir verarbeiten, stehen dir nach Maßgabe
+          der gesetzlichen Voraussetzungen unter anderem Rechte auf Auskunft,
+          Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit
+          und Widerspruch zu. Du kannst dich außerdem bei einer zuständigen
+          Datenschutzaufsichtsbehörde beschweren.</p>
+        <p>Wende dich für Datenschutzanfragen an
+          <a class="email" href="mailto:logworks.support@gmail.com">logworks.support@gmail.com</a>.</p>
+      </div>
+    </section>
+
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <span>© 2026 Nico Albert · TourLog</span>
+      <div class="footer-links">
+        <a href="support.html">Support</a>
+        <a href="datenschutz.html">Datenschutz</a>
+        <a href="impressum.html">Impressum</a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
-
