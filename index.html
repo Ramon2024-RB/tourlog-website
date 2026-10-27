@@ -1,1 +1,170 @@
-<!doctype html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#101217"><meta name="description" content="LogWorks – unabhängige Apps für den Alltag. TourLog für die persönliche Erfassung von Arbeitszeiten und Zustellungen."><title>LogWorks – Apps für den Alltag</title><link rel="stylesheet" href="style.css"></head><body><header class="nav wrap"><a class="brand" href="index.html"><span class="logo">◈</span> LogWorks</a><nav><a href="#apps">Apps</a><a href="datenschutz.html">Datenschutz</a><a href="support.html">Support</a></nav></header><main><section class="hero wrap"><p class="eyebrow">UNABHÄNGIGE APPS FÜR DEN ALLTAG</p><h1>Einfacher organisieren.<br><em>Mehr im Blick.</em></h1><p class="lead">LogWorks entwickelt praktische Apps, die deinen Alltag übersichtlicher machen – verständlich, durchdacht und ohne unnötige Komplexität.</p><a class="button" href="#apps">Unsere Apps entdecken <span aria-hidden="true">↗</span></a></section><section id="apps" class="wrap section"><p class="eyebrow">UNSERE APPS</p><h2>Für das, was zählt.</h2><article class="app-card"><div class="app-icon" aria-hidden="true">↗</div><div><span class="tag">IN ENTWICKLUNG</span><h3>TourLog</h3><p>Arbeitszeiten, Pausen, Zustellbezirke und Paketmengen dokumentieren – mit Kalender, Statistiken und manuellen Backups.</p><div class="chips"><span>Kostenlos geplant</span><span>Ohne Benutzerkonto</span><span>Lokale Speicherung</span></div><a class="textlink" href="support.html">Fragen zu TourLog? ↗</a></div></article><p class="smallnote">TourLog ist eine unabhängige Anwendung und kein offizielles Produkt der Deutschen Post AG oder DHL Group.</p></section><section class="wrap section"><div class="contact-card"><div><p class="eyebrow">FRAGEN ODER FEEDBACK?</p><h2>Wir freuen uns auf deine Nachricht.</h2><p>Du hast eine Idee, einen Verbesserungsvorschlag oder ein Problem mit TourLog?</p></div><a class="button" href="mailto:logworks.support@gmail.com?subject=TourLog%20%E2%80%93%20Supportanfrage">E-Mail schreiben ↗</a></div></section></main><footer class="wrap footer"><span>© <span id="year">2026</span> LogWorks</span><div><a href="datenschutz.html">Datenschutz</a><a href="support.html">Support</a><a href="impressum.html">Impressum</a></div></footer><script>document.getElementById('year').textContent=new Date().getFullYear()</script></body></html>
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10110f">
+  <meta name="description" content="TourLog – Arbeitszeiten, Touren und Dienstplanung übersichtlich organisieren.">
+  <title>Startseite | TourLog</title>
+  <style>
+
+:root {
+  color-scheme: dark;
+  --bg:#10110f; --surface:#1a1c18; --surface2:#22251e; --line:#373a30;
+  --gold:#e0bd78; --gold-light:#f5dfae; --text:#f3f1e9; --muted:#bbbcb3;
+  --green:#a5cf9a; --max:1080px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;
+background:radial-gradient(circle at 82% -7%,#3b3320 0,transparent 35%),var(--bg);
+color:var(--text);line-height:1.65}
+a{color:var(--gold-light);text-decoration-thickness:1px;text-underline-offset:3px}
+a:hover{color:#fff0ca}
+.wrap{width:min(calc(100% - 44px),var(--max));margin:auto}
+.site-header{border-bottom:1px solid var(--line);background:rgba(16,17,15,.92)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:82px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:12px;color:var(--text);text-decoration:none;font-size:1.18rem;font-weight:800;letter-spacing:-.03em}
+.brand-mark{display:grid;place-items:center;width:38px;height:38px;border-radius:12px;
+background:linear-gradient(135deg,#e9cc8c,#98713b);color:#171812;font-size:.83rem;
+font-weight:900;letter-spacing:-.08em;box-shadow:0 4px 18px #0005}
+nav{display:flex;flex-wrap:wrap;gap:18px;align-items:center}
+nav a{color:var(--muted);font-size:.92rem;text-decoration:none}
+nav a[aria-current="page"],nav a:hover{color:var(--gold-light)}
+.hero{padding:91px 0 68px;position:relative}
+.eyebrow{display:inline-flex;align-items:center;gap:9px;color:var(--gold);font-weight:700;
+font-size:.78rem;letter-spacing:.12em;text-transform:uppercase}
+.eyebrow::before{content:"";width:18px;height:2px;background:var(--gold)}
+h1{font-size:clamp(2.5rem,5.1vw,4.7rem);line-height:1.1;letter-spacing:-.055em;margin:20px 0 22px}
+h1 .gold{color:var(--gold-light)}
+h2{font-size:clamp(1.45rem,3vw,2.05rem);letter-spacing:-.035em;line-height:1.25;margin:0 0 14px}
+h3{font-size:1.09rem;margin:0 0 10px;letter-spacing:-.015em}
+p{margin:0 0 17px}
+.lead{font-size:1.12rem;color:#d2d1c8;max-width:680px}
+.btn-row{display:flex;flex-wrap:wrap;gap:13px;margin-top:30px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;
+padding:12px 18px;border-radius:12px;border:1px solid var(--line);text-decoration:none;
+font-weight:700;font-size:.93rem;color:var(--text)}
+.btn-primary{background:var(--gold);color:#1b1b14;border-color:var(--gold)}
+.btn-primary:hover{background:var(--gold-light);color:#171710}
+.btn-secondary:hover{background:#2a2a23;color:var(--text)}
+.section{padding:44px 0 72px}
+.section-intro{color:var(--muted);max-width:760px;margin-bottom:25px}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.card{background:linear-gradient(140deg,var(--surface2),var(--surface));
+border:1px solid var(--line);border-radius:20px;padding:25px}
+.card p{color:var(--muted);margin-bottom:0}
+.card .symbol{font-size:1.42rem;color:var(--gold);display:inline-block;margin-bottom:15px}
+.panel{padding:29px;border:1px solid #5a5139;border-radius:22px;background:linear-gradient(130deg,#2d2a1f,#1c1e19)}
+.panel p:last-child{margin-bottom:0}
+.kicker{color:var(--gold);font-size:.82rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase}
+.narrow{max-width:840px}
+.prose h2{margin-top:37px;font-size:1.45rem}
+.prose h3{margin-top:24px}
+.prose p,.prose li{color:#d1d1c7}
+.prose ul{padding-left:24px}
+.prose li{margin-bottom:8px}
+.faq{display:grid;gap:12px;margin-top:20px}
+.faq article{padding:23px;border:1px solid var(--line);border-radius:17px;background:var(--surface)}
+.faq p{color:var(--muted);margin:0}
+.note{padding:16px 19px;border-left:3px solid var(--gold);background:#252419;border-radius:0 12px 12px 0;color:#dfddcf}
+.warning{padding:18px 22px;border:1px solid #d6ac63;background:#322819;border-radius:12px;color:#fff5de}
+.warning strong{color:#ffe4aa}
+.site-footer{border-top:1px solid var(--line);margin-top:35px;padding:28px 0 42px}
+.footer-inner{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;
+font-size:.88rem;color:var(--muted)}
+.footer-links{display:flex;flex-wrap:wrap;gap:17px}
+.footer-links a{color:var(--muted)}
+.email{overflow-wrap:anywhere}
+@media(max-width:760px){.bar{padding:15px 0}nav{gap:12px}
+.hero{padding:63px 0 45px}.grid{grid-template-columns:1fr}
+.section{padding:32px 0 50px}.card{padding:20px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap bar">
+      <a class="brand" href="index.html" aria-label="TourLog – Startseite">
+        <span class="brand-mark" aria-hidden="true">TL</span><span>TourLog</span>
+      </a>
+      <nav aria-label="Hauptnavigation">
+        <a href="index.html" aria-current="page">Startseite</a>
+<a href="support.html">Support</a>
+<a href="datenschutz.html">Datenschutz</a>
+<a href="impressum.html">Impressum</a>
+      </nav>
+    </div>
+  </header>
+  <main id="inhalt">
+
+    <section class="hero">
+      <div class="wrap">
+        <span class="eyebrow">Dienst &amp; Zeiten</span>
+        <h1>Dein Arbeitstag.<br><span class="gold">Alles im Blick.</span></h1>
+        <p class="lead">TourLog unterstützt dich dabei, Arbeitszeiten zu dokumentieren,
+          Dienste zu planen und deine Touren übersichtlich auszuwerten –
+          an einem Ort und in deinem eigenen Tempo.</p>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="support.html">Hilfe zu TourLog</a>
+          <a class="btn btn-secondary" href="#funktionen">Funktionen entdecken</a>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="funktionen">
+      <div class="wrap">
+        <p class="kicker">Einfach organisiert</p>
+        <h2>Alles Wichtige für deinen Dienst</h2>
+        <p class="section-intro">Ein klarer Überblick statt verstreuter Notizen und Listen.</p>
+        <div class="grid">
+          <article class="card"><span class="symbol" aria-hidden="true">◷</span>
+            <h3>Arbeitszeiten</h3><p>Arbeitsbeginn, Pausen und Dienstende strukturiert festhalten.</p>
+          </article>
+          <article class="card"><span class="symbol" aria-hidden="true">▦</span>
+            <h3>Plan &amp; Kalender</h3><p>Arbeitstage, freie Tage und Abwesenheiten im Kalender überblicken.</p>
+          </article>
+          <article class="card"><span class="symbol" aria-hidden="true">⌖</span>
+            <h3>Touren &amp; Bezirke</h3><p>Den Überblick über unterschiedliche Einsätze und Bezirke behalten.</p>
+          </article>
+          <article class="card"><span class="symbol" aria-hidden="true">↗</span>
+            <h3>Statistiken</h3><p>Erfasste Zeiten und Arbeitstage nachvollziehbar auswerten.</p>
+          </article>
+          <article class="card"><span class="symbol" aria-hidden="true">☼</span>
+            <h3>Urlaub &amp; Freizeit</h3><p>Abwesenheiten bei der persönlichen Planung berücksichtigen.</p>
+          </article>
+          <article class="card"><span class="symbol" aria-hidden="true">⇄</span>
+            <h3>Datenverwaltung</h3><p>Vorhandene Export- und Importfunktionen für deine Aufzeichnungen nutzen.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="wrap">
+        <div class="panel">
+          <p class="kicker">Für Fragen und Feedback</p>
+          <h2>Wir helfen dir weiter.</h2>
+          <p>Du hast eine Frage zur Bedienung, möchtest einen Fehler melden oder eine
+            Verbesserung vorschlagen? Auf der Supportseite findest du die Kontaktadresse.</p>
+          <a class="btn btn-primary" href="support.html">Zum Support</a>
+        </div>
+        <p style="color:var(--muted);font-size:.82rem;margin-top:20px">
+          TourLog ist eine unabhängige App und kein offizielles Produkt eines Post-,
+          Paket- oder Logistikunternehmens.
+        </p>
+      </div>
+    </section>
+
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <span>© 2026 Nico Albert · TourLog</span>
+      <div class="footer-links">
+        <a href="support.html">Support</a>
+        <a href="datenschutz.html">Datenschutz</a>
+        <a href="impressum.html">Impressum</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
