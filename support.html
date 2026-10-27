@@ -1,1 +1,167 @@
-<!doctype html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#101217"><title>Support – LogWorks</title><link rel="stylesheet" href="style.css"></head><body><header class="nav wrap"><a class="brand" href="index.html"><span class="logo">◈</span> LogWorks</a><nav><a href="index.html">Startseite</a><a href="datenschutz.html">Datenschutz</a><a href="impressum.html">Impressum</a></nav></header><main><section class="wrap pagehead"><p class="eyebrow">TOURLOG · HILFE</p><h1>Support & Kontakt.</h1><p class="lead">Du hast Fragen, einen Fehler gefunden oder einen Vorschlag für TourLog?</p></section><section class="wrap"><div class="content-card"><h2>Schreib uns eine E-Mail</h2><p>Wir helfen bei Fragen zur Nutzung und freuen uns über Hinweise zur Verbesserung der App.</p><p><strong>E-Mail:</strong> <a href="mailto:logworks.support@gmail.com">logworks.support@gmail.com</a></p><p><a class="button" href="mailto:logworks.support@gmail.com?subject=TourLog%20%E2%80%93%20Supportanfrage">Support kontaktieren ↗</a></p><h2>Was hilft bei einer Fehlermeldung?</h2><ul><li>Eine kurze Beschreibung des Problems</li><li>Die betroffene Funktion und die Schritte, die zum Fehler geführt haben</li><li>Die verwendete TourLog-Version und iOS-Version, falls bekannt</li></ul><p>Bitte sende keine vertraulichen Arbeitsdaten oder vollständigen Backups, sofern dies nicht ausdrücklich notwendig und von dir gewünscht ist.</p><h2>Hinweis</h2><p>TourLog ist unabhängig und nicht mit der Deutschen Post AG oder DHL Group verbunden.</p></div></section></main><footer class="wrap footer"><span>© 2026 LogWorks</span><div><a href="index.html">Startseite</a><a href="datenschutz.html">Datenschutz</a><a href="impressum.html">Impressum</a></div></footer></body></html>
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10110f">
+  <meta name="description" content="Hilfe, Kontakt und häufige Fragen zur TourLog-App.">
+  <title>Support | TourLog</title>
+  <style>
+
+:root {
+  color-scheme: dark;
+  --bg:#10110f; --surface:#1a1c18; --surface2:#22251e; --line:#373a30;
+  --gold:#e0bd78; --gold-light:#f5dfae; --text:#f3f1e9; --muted:#bbbcb3;
+  --green:#a5cf9a; --max:1080px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;
+background:radial-gradient(circle at 82% -7%,#3b3320 0,transparent 35%),var(--bg);
+color:var(--text);line-height:1.65}
+a{color:var(--gold-light);text-decoration-thickness:1px;text-underline-offset:3px}
+a:hover{color:#fff0ca}
+.wrap{width:min(calc(100% - 44px),var(--max));margin:auto}
+.site-header{border-bottom:1px solid var(--line);background:rgba(16,17,15,.92)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:82px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:12px;color:var(--text);text-decoration:none;font-size:1.18rem;font-weight:800;letter-spacing:-.03em}
+.brand-mark{display:grid;place-items:center;width:38px;height:38px;border-radius:12px;
+background:linear-gradient(135deg,#e9cc8c,#98713b);color:#171812;font-size:.83rem;
+font-weight:900;letter-spacing:-.08em;box-shadow:0 4px 18px #0005}
+nav{display:flex;flex-wrap:wrap;gap:18px;align-items:center}
+nav a{color:var(--muted);font-size:.92rem;text-decoration:none}
+nav a[aria-current="page"],nav a:hover{color:var(--gold-light)}
+.hero{padding:91px 0 68px;position:relative}
+.eyebrow{display:inline-flex;align-items:center;gap:9px;color:var(--gold);font-weight:700;
+font-size:.78rem;letter-spacing:.12em;text-transform:uppercase}
+.eyebrow::before{content:"";width:18px;height:2px;background:var(--gold)}
+h1{font-size:clamp(2.5rem,5.1vw,4.7rem);line-height:1.1;letter-spacing:-.055em;margin:20px 0 22px}
+h1 .gold{color:var(--gold-light)}
+h2{font-size:clamp(1.45rem,3vw,2.05rem);letter-spacing:-.035em;line-height:1.25;margin:0 0 14px}
+h3{font-size:1.09rem;margin:0 0 10px;letter-spacing:-.015em}
+p{margin:0 0 17px}
+.lead{font-size:1.12rem;color:#d2d1c8;max-width:680px}
+.btn-row{display:flex;flex-wrap:wrap;gap:13px;margin-top:30px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;
+padding:12px 18px;border-radius:12px;border:1px solid var(--line);text-decoration:none;
+font-weight:700;font-size:.93rem;color:var(--text)}
+.btn-primary{background:var(--gold);color:#1b1b14;border-color:var(--gold)}
+.btn-primary:hover{background:var(--gold-light);color:#171710}
+.btn-secondary:hover{background:#2a2a23;color:var(--text)}
+.section{padding:44px 0 72px}
+.section-intro{color:var(--muted);max-width:760px;margin-bottom:25px}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.card{background:linear-gradient(140deg,var(--surface2),var(--surface));
+border:1px solid var(--line);border-radius:20px;padding:25px}
+.card p{color:var(--muted);margin-bottom:0}
+.card .symbol{font-size:1.42rem;color:var(--gold);display:inline-block;margin-bottom:15px}
+.panel{padding:29px;border:1px solid #5a5139;border-radius:22px;background:linear-gradient(130deg,#2d2a1f,#1c1e19)}
+.panel p:last-child{margin-bottom:0}
+.kicker{color:var(--gold);font-size:.82rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase}
+.narrow{max-width:840px}
+.prose h2{margin-top:37px;font-size:1.45rem}
+.prose h3{margin-top:24px}
+.prose p,.prose li{color:#d1d1c7}
+.prose ul{padding-left:24px}
+.prose li{margin-bottom:8px}
+.faq{display:grid;gap:12px;margin-top:20px}
+.faq article{padding:23px;border:1px solid var(--line);border-radius:17px;background:var(--surface)}
+.faq p{color:var(--muted);margin:0}
+.note{padding:16px 19px;border-left:3px solid var(--gold);background:#252419;border-radius:0 12px 12px 0;color:#dfddcf}
+.warning{padding:18px 22px;border:1px solid #d6ac63;background:#322819;border-radius:12px;color:#fff5de}
+.warning strong{color:#ffe4aa}
+.site-footer{border-top:1px solid var(--line);margin-top:35px;padding:28px 0 42px}
+.footer-inner{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;
+font-size:.88rem;color:var(--muted)}
+.footer-links{display:flex;flex-wrap:wrap;gap:17px}
+.footer-links a{color:var(--muted)}
+.email{overflow-wrap:anywhere}
+@media(max-width:760px){.bar{padding:15px 0}nav{gap:12px}
+.hero{padding:63px 0 45px}.grid{grid-template-columns:1fr}
+.section{padding:32px 0 50px}.card{padding:20px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap bar">
+      <a class="brand" href="index.html" aria-label="TourLog – Startseite">
+        <span class="brand-mark" aria-hidden="true">TL</span><span>TourLog</span>
+      </a>
+      <nav aria-label="Hauptnavigation">
+        <a href="index.html">Startseite</a>
+<a href="support.html" aria-current="page">Support</a>
+<a href="datenschutz.html">Datenschutz</a>
+<a href="impressum.html">Impressum</a>
+      </nav>
+    </div>
+  </header>
+  <main id="inhalt">
+
+    <section class="hero">
+      <div class="wrap narrow">
+        <span class="eyebrow">TourLog Support</span>
+        <h1>Wie können wir <span class="gold">helfen?</span></h1>
+        <p class="lead">Fragen zu Arbeitszeiten, Kalender, Auswertungen
+          oder deiner Datenverwaltung? Hier findest du Antworten und eine Kontaktmöglichkeit.</p>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="mailto:logworks.support@gmail.com?subject=TourLog%20Supportanfrage">Support per E-Mail</a>
+          <a class="btn btn-secondary" href="#fragen">Häufige Fragen</a>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="fragen">
+      <div class="wrap narrow">
+        <p class="kicker">Häufige Fragen</p>
+        <h2>Antworten auf einen Blick</h2>
+        <div class="faq">
+          <article><h3>Wie erfasse ich meine Arbeitszeiten?</h3>
+            <p>Öffne die Arbeitszeiterfassung in TourLog und trage die Angaben zu deinem
+            Dienst entsprechend den Eingabefeldern ein. Kontrolliere deine Eingaben vor dem Speichern.</p>
+          </article>
+          <article><h3>Wo sehe ich meine Arbeitstage?</h3>
+            <p>Im Kalender beziehungsweise Arbeitsplan kannst du deine erfassten Tage
+            und geplanten Abwesenheiten überblicken.</p>
+          </article>
+          <article><h3>Wie kann ich meine Aufzeichnungen sichern?</h3>
+            <p>Nutze die in deiner App-Version angebotenen Export- und Importfunktionen.
+            Bewahre Sicherungsdateien an einem geeigneten, selbst gewählten Ort auf.</p>
+          </article>
+          <article><h3>Wohin kann ich Fehler oder Ideen melden?</h3>
+            <p>Schicke eine E-Mail an <a class="email" href="mailto:logworks.support@gmail.com">logworks.support@gmail.com</a>.
+            Hilfreich sind App-Version, iPhone-Modell und eine kurze Beschreibung.
+            Bitte sende keine vertraulichen Zustell- oder Kundendaten.</p>
+          </article>
+          <article><h3>Ist TourLog eine offizielle App meines Arbeitgebers?</h3>
+            <p>Nein. TourLog wird unabhängig angeboten und ist kein offizielles
+            Produkt eines Post-, Paket- oder Logistikunternehmens.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="wrap narrow">
+        <div class="panel">
+          <p class="kicker">Persönlicher Kontakt</p>
+          <h2>Dein Anliegen ist nicht dabei?</h2>
+          <p>Schreibe an <a class="email" href="mailto:logworks.support@gmail.com">logworks.support@gmail.com</a>.
+             Beschreibe möglichst genau, wobei du Hilfe benötigst.</p>
+          <a class="btn btn-primary" href="mailto:logworks.support@gmail.com?subject=TourLog%20Supportanfrage">E-Mail schreiben</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <span>© 2026 Nico Albert · TourLog</span>
+      <div class="footer-links">
+        <a href="support.html">Support</a>
+        <a href="datenschutz.html">Datenschutz</a>
+        <a href="impressum.html">Impressum</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
